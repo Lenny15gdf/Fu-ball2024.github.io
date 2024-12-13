@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine erste Website</title>
+</head>
+<body>
+    <h1>wilkommen auf meiner website!</h1>
+    <p>Dies ist ein einfacher HTML-Test.</p>
+</body>
+</html>
+<img src="bild.jpg" alt="Beschreibung des Bildes">
+<a href="https://www.example.com">Besuche meine Lieblingswebsite</a>
+<ul>
+    <li>one football</li>
+    <li>youtube</li>
+    <li>Snap</li>
+</ul>
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
+<form action="deine-server-seite" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="nachricht">Nachricht:</label>
+    <textarea id="nachricht" name="nachricht" required></textarea>
+    
+    <button type="submit">Absenden</button>
+</form>
+<nav>
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    h1 {
+        color: #333;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+<footer>
+    <p>&copy; 2023 Meine Website. Alle Rechte vorbehalten.</p>
+</footer>
+<script>
+    window.onload = function() {
+        alert("Willkommen auf meiner Website!");
+    };
+</script>
+<img src="bild.jpg" alt="Beschreibung des Bildes" style="max-width: 100%; height: auto;">
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+<button id="openModal">Öffne Modal</button>
+
+<div id="myModal" style="display:none;">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2>Mein Modal</h2>
+        <p>Dies ist der Inhalt des Modals.</p>
+    </div>
+</div>
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#myModal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+<script>
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("openModal");
+    const span = document.getElementById("closeModal");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<img src="bild.png" alt="Beschreibung des Bildes" style="max-width: 40%; height: auto;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
